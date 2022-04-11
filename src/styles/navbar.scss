@@ -1,0 +1,132 @@
+#navbar {
+  background: #232323bf;
+  border-radius: 20px;
+  position: fixed;
+  top: 5%;
+  width: 90%;
+  left: 5%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%;
+  backdrop-filter: blur(10px);
+  z-index: 5000;
+
+  .logo {
+    width: 15%;
+  }
+
+  .nav-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    p {
+      transition: all 0.2s ease-in-out;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 20px;
+      &:hover {
+        background: #121212;
+      }
+    }
+  }
+
+  .action-links {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    .icons {
+      display: flex;
+      align-items: center;
+      div {
+        margin: 0 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  .off-canvas {
+    display: none;
+  }
+
+  @media (max-width: 750px) {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    top: 1%;
+    left: unset;
+    right: 5%;
+    background-color: transparent;
+    .action-links {
+      display: none;
+    }
+    .nav-links,
+    .logo {
+      display: none;
+    }
+    .off-canvas {
+      display: block;
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      position: fixed;
+      height: 80px;
+      width: 80px;
+      background: #232323;
+      top: 1%;
+      left: unset;
+      right: -5%;
+      transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      overflow: hidden;
+
+      .menu-icon {
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        width: 45px;
+        img {
+          width: 100%;
+        }
+      }
+      .nav-container {
+        padding-top: 100px;
+        height: 97vh;
+        width: 90vw;
+        // position: absolute;
+        right: 0;
+        left: 0;
+        .action-links {
+          width: 100%;
+          padding: 5%;
+          padding-left: calc(5% + 20px);
+          display: block;
+          flex-direction: column;
+          .icons {
+            margin-top: 30px;
+            margin-bottom: 30px;
+          }
+          .btn {
+            width: 100%;
+          }
+        }
+      }
+      .nav-links {
+        display: block;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        p {
+          width: 100%;
+        }
+      }
+    }
+    .open {
+      width: 93vw;
+      height: 97vh;
+    }
+  }
+}

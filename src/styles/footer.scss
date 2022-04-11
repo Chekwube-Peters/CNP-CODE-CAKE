@@ -1,0 +1,97 @@
+#community {
+  height: fit-content;
+  position: relative;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+
+  .background-art {
+    width: 100%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+  }
+
+  .footer-content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .community-card {
+      padding: 60px 55px;
+      padding-bottom: 70px;
+      border-radius: 25px;
+      background: rgba(0, 0, 0, 0.29);
+      backdrop-filter: blur(18px);
+      width: 65%;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      .nav {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        .btn {
+          width: 135px;
+          margin: 0 15px;
+        }
+      }
+    }
+    .copyright-content {
+      position: absolute;
+      bottom: 10%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .icons {
+        margin-left: 35px;
+        padding-left: 35px;
+        border-left: 1px solid #ffffff77;
+        img {
+          margin-right: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  @media (max-width: 750px) {
+    .background-art {
+      opacity: 0;
+    }
+    background-image: url(../../public/images/footer_art_grid_mobile.png);
+    background-size: 100% auto;
+    background-position: 0% 180%;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    .community-card {
+      padding: 25px !important;
+      width: 90% !important;
+      .nav {
+        flex-direction: column;
+        align-items: center;
+        .btn {
+          width: 100%;
+          margin: 15px 0 !important;
+        }
+      }
+    }
+    .copyright-content {
+      bottom: 10px !important;
+      flex-direction: column;
+      .copyright {
+        text-align: center;
+      }
+      .icons {
+        border-left: unset !important;
+        margin-top: 20px;
+        justify-content: center;
+        display: flex;
+        margin-left: 0 !important;
+        padding: 0 !important;
+      }
+    }
+  }
+}

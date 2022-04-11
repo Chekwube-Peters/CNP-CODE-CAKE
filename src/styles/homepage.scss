@@ -1,0 +1,476 @@
+#homepage {
+  overflow-x: hidden;
+  img {
+    max-width: 100%;
+  }
+  .hero-section {
+    padding: 100px 10%;
+    padding-top: 250px;
+    .extralarge {
+      font-weight: bold;
+      font-size: 144px;
+      line-height: 169px;
+    }
+    .large {
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 84px;
+
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .nav {
+      display: flex;
+      margin-top: 70px;
+    }
+
+    .bottom {
+      margin-top: 50px;
+      display: flex;
+      // flex-wrap: wrap;
+      width: 100%;
+      .coin-logos {
+        width: fit-content;
+        padding: 20px 0;
+        padding-right: 30px;
+        display: flex;
+        img {
+          max-width: 155px;
+          margin-right: 20px;
+        }
+        border-right: 1.5px solid #595959;
+      }
+      .count-down {
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+        .nft-text {
+          font-family: $stingerFont;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 21px;
+          b {
+            color: $primary;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 49px;
+            letter-spacing: 0.04em;
+          }
+        }
+        .count {
+          margin-left: 50px;
+          display: flex;
+          div {
+            display: flex;
+            align-items: center;
+            p {
+              font-weight: bold;
+              font-size: 52px;
+              line-height: 63px;
+            }
+            .desc {
+              margin-left: 10px;
+              font-size: 18px;
+              line-height: 22px;
+              color: #ffffff66;
+            }
+          }
+        }
+      }
+    }
+  }
+  .concept {
+    position: relative;
+    margin-bottom: 100px;
+    .content {
+      padding: 0 10%;
+      padding-bottom: 150px;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: flex-end;
+      .desc {
+        font-size: 18px;
+        line-height: 26px;
+        margin-left: 80px;
+      }
+    }
+    .line-text {
+      font-family: $stingerFont;
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 56px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: 0 20px;
+      animation: animate-first-screen 40s -40s linear infinite;
+      will-change: transform;
+      display: flex;
+      align-items: center;
+    }
+
+    .line-text:nth-child(2) {
+      animation: animate-second-screen 40s -20s linear infinite;
+    }
+
+    .line {
+      //   position: absolute;
+      display: flex;
+      width: 110%;
+    }
+
+    .line-red {
+      background: $primary;
+      height: 85px;
+      line-height: 118px;
+      z-index: 2;
+      /* transform: rotate(15deg) translate(-200px, 100px); */
+      top: 130px;
+    }
+  }
+  .teaser {
+    position: relative;
+    .teaser-bg {
+      width: 100%;
+    }
+    .content {
+      background-image: url(../../public/images/red_ghost.png);
+      background-repeat: no-repeat;
+      background-position: 10% 100%;
+      position: absolute;
+      top: -30px;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      padding: 0 20%;
+      .heading {
+        font-size: 48px;
+      }
+      .story {
+        font-size: 22px;
+        line-height: 32px;
+      }
+      .bottom {
+        position: absolute;
+        bottom: 100px;
+        width: 60%;
+      }
+    }
+  }
+  .characters {
+    padding: 100px 10%;
+    background-image: url(../../public/images/red_bat.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 100px) 150px;
+    .character-cards {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .tokenomics {
+    padding: 100px 10%;
+    .content {
+      display: flex;
+      justify-content: space-between;
+      .values {
+        background-color: #1e1e1e;
+        padding: 43px 40px;
+        border-radius: 25px;
+        width: 45%;
+        h1 {
+          font-weight: bold;
+          font-size: 160px;
+          line-height: 195px;
+        }
+        .amt {
+          font-size: 48px;
+          line-height: 59px;
+        }
+        .desc {
+          color: rgba(255, 255, 255, 0.61);
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+      .charts {
+        padding: 50px 53px;
+        width: 53%;
+        background: linear-gradient(
+          212.42deg,
+          #1c1c1c 19.42%,
+          rgba(28, 28, 28, 0) 114.81%
+        );
+        border-radius: 25px;
+        display: flex;
+        .chart {
+          max-width: 45%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .description {
+          margin-left: 50px;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          .chart-desc {
+            margin: 15px 0;
+            .percentage {
+              color: #ffffff99;
+              font-weight: 600;
+            }
+            p {
+              font-size: 24px;
+              line-height: 29px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .roadmap {
+    padding: 100px 15%;
+    padding-top: 150px;
+    .phases {
+      display: flex;
+      justify-content: space-between;
+      .road {
+        height: fit-content;
+        margin-top: 50px;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        width: 46%;
+        background: linear-gradient(
+          212.42deg,
+          #1c1c1c 19.42%,
+          rgba(28, 28, 28, 0) 114.81%
+        );
+        border-radius: 25px;
+        padding: 18px 35px;
+        .title {
+          font-size: 24px;
+          font-weight: bold;
+          padding: 9px 12px;
+          background: rgba(251, 251, 251, 0.08);
+          border-radius: 10px;
+          width: fit-content;
+        }
+        .item {
+          line-height: 28px;
+        }
+      }
+      .divider {
+        width: 46%;
+        .road {
+          width: 100% !important;
+        }
+      }
+      .roadmap_line {
+        transform: translateY(25%);
+        width: 8%;
+      }
+    }
+  }
+  .faqs {
+    padding: 0 15%;
+    padding-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 750px) {
+    .hero-section {
+      padding: 100px 5%;
+      .extralarge {
+        font-size: 80px;
+        line-height: 80px;
+      }
+      .large {
+        font-size: 45px;
+      }
+      .bottom {
+        flex-wrap: wrap;
+        .coin-logos {
+          width: 100%;
+          flex-direction: row;
+          border: none;
+          img {
+            max-width: calc(100% / 3.2);
+          }
+        }
+        .count-down {
+          padding-left: 0;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          .nft-text {
+            display: flex;
+            align-items: center;
+            b {
+              margin-right: 20px;
+            }
+            br {
+              display: none;
+            }
+          }
+          .count {
+            margin-left: 0;
+            margin-top: 5px;
+            p {
+              font-size: 32px !important;
+              line-height: 43px;
+            }
+            .desc {
+              margin-left: 10px;
+              font-size: 16px !important;
+              line-height: 22px;
+              color: #ffffff66;
+            }
+          }
+        }
+      }
+    }
+    .concept {
+      min-height: 1000px;
+      background-image: url(../../public/images/concept_art_grid_mobile.png);
+      background-size: 100% auto;
+      background-position: 0% -130%;
+      background-repeat: no-repeat;
+      .background-grid {
+        opacity: 0;
+      }
+      .line-text {
+        font-size: 35px !important;
+      }
+      .content {
+        padding: 50px 5%;
+        padding-bottom: 150px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        .desc {
+          font-size: 16px;
+          line-height: 26px;
+          margin-left: 0px;
+          margin-top: 50px;
+        }
+      }
+      .line-red {
+        position: absolute;
+        top: 90%;
+      }
+    }
+    .teaser {
+      min-height: 900px;
+      display: flex;
+      align-items: center;
+      .content {
+        background-position: 10% 100%;
+        background-size: 90px auto;
+        padding: 0 7%;
+        .heading {
+          font-size: 45px;
+        }
+        .story {
+          font-size: 18px;
+          line-height: 25px;
+        }
+        .bottom {
+          bottom: 100px;
+          width: 86%;
+        }
+      }
+    }
+    .characters {
+      padding: 50px 5%;
+      background-position: calc(100% - 20px) 120px;
+      background-size: 100px auto;
+      .character-cards {
+        flex-direction: column;
+        #character-card {
+          width: 100%;
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .tokenomics {
+      padding: 50px 5%;
+      .content {
+        flex-direction: column;
+        .values {
+          width: 100%;
+          margin-bottom: 50px;
+          h1 {
+            font-weight: bold;
+            font-size: 80px;
+            line-height: 95px;
+          }
+          .amt {
+            font-size: 38px;
+            line-height: 49px;
+          }
+          .desc {
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 10px;
+          }
+        }
+        .charts {
+          width: 100%;
+          flex-direction: column;
+          padding: 50px 33px;
+          align-items: center;
+          .chart {
+            max-width: 100%;
+          }
+          .description {
+            margin-left: 0px;
+            margin-top: 20px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .chart-desc {
+              margin: 15px 0;
+              .percentage {
+                color: #ffffff99;
+                font-weight: 600;
+              }
+              p {
+                font-size: 24px;
+                line-height: 29px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .roadmap {
+      padding: 100px 5%;
+      .phases {
+        flex-direction: column;
+        .road {
+          width: 100% !important;
+        }
+        .divider {
+          width: 100%;
+          .road {
+            width: 100% !important;
+          }
+        }
+        .roadmap_line {
+          display: none;
+        }
+      }
+    }
+    .faqs {
+      padding: 50px 5%;
+    }
+  }
+}

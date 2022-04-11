@@ -1,0 +1,50 @@
+@font-face {
+  font-family: StingerWideTrial;
+  src: url(../fonts/StingerWideTrial-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+body {
+  background-color: #101010;
+  font-family: Montserrat;
+  color: white;
+  overflow-x: hidden !important;
+}
+* {
+  box-sizing: border-box !important;
+}
+
+p,
+li,
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: white;
+  //   font-family: StingerWideTrial;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes animate-first-screen {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate-second-screen {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}

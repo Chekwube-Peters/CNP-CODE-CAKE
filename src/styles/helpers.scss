@@ -1,0 +1,61 @@
+.btn {
+  border: unset;
+  background-color: unset;
+  height: 55px;
+  padding: 0 16px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+  font-family: Montserrat;
+}
+
+.btn-primary {
+  background-color: $primary;
+  color: white;
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.btn-white {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  &:hover {
+    background-color: white;
+    color: $darkBlack;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading {
+  font-size: 64px;
+  font-family: StingerWideTrial;
+  font-weight: bold;
+  @media (max-width: 750px) {
+    font-size: 45px;
+  }
+}
+
+.mb-1 {
+  margin-bottom: 10px !important;
+}
+.mb-2 {
+  margin-bottom: 20px !important;
+}
+.mb-3 {
+  margin-bottom: 30px !important;
+}
+.mr-1 {
+  margin-right: 10px !important;
+}
+.mr-2 {
+  margin-right: 20px !important;
+}
+.mr-3 {
+  margin-right: 30px !important;
+}
